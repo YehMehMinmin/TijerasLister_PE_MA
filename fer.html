@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información completa sobre las Tijeras Lister: características, usos, mantenimiento y dónde comprar. Herramientas profesionales para agricultura y ganadería.">
+    <title>Tijeras Lister - Herramientas Profesionales para Agricultura y Ganadería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-claro: #E6F2FF;
+            --azul-medio: #66B3FF;
+            --azul-fuerte: #0066CC;
+            --azul-oscuro: #003366;
+            --blanco: #FFFFFF;
+            --gris-claro: #F5F5F5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--azul-claro);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-fuerte));
+            color: var(--blanco);
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--blanco);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+            border-radius: 8px;
+            border: 5px solid var(--blanco);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            margin-top: 2rem;
+        }
+        
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--blanco);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 3px solid var(--azul-medio);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,51,102,0.8);
+            color: var(--blanco);
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: var(--gris-claro);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--azul-fuerte);
+        }
+        
+        .feature h3 {
+            color: var(--azul-fuerte);
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--azul-fuerte);
+            color: var(--blanco);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background: var(--azul-oscuro);
+            transform: translateY(-2px);
+        }
+        
+        /* Price Table */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .price-table th, .price-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .price-table th {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+        }
+        
+        .price-table tr:nth-child(even) {
+            background-color: var(--gris-claro);
+        }
+        
+        .price-table tr:hover {
+            background-color: #e6f2ff;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .testimonial {
+            background: var(--blanco);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--azul-medio);
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--azul-oscuro);
+            margin-top: 1rem;
+            text-align: right;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .faq-question {
+            background: var(--azul-fuerte);
+            color: var(--blanco);
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 1rem;
+            background: var(--gris-claro);
+            border-radius: 0 0 5px 5px;
+            display: none;
+        }
+        
+        .faq-answer.active {
+            display: block;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--azul-oscuro);
+            color: var(--blanco);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--blanco);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--azul-medio);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .footer-column li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-column a {
+            color: var(--azul-claro);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: var(--blanco);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: var(--blanco);
+            background: var(--azul-fuerte);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--azul-medio);
+        }
+        
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Hero Section -->
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Tijeras Lister Profesionales</h1>
+                <p>Herramientas de corte de alta calidad para agricultura, ganadería y jardinería profesional</p>
+                <a href="#caracteristicas" class="btn">Conoce más</a>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Z6XMGHyydutxcCn5ssXg4luj4Hj74H5sNA&s" alt="Tijeras Lister profesionales" class="hero-image">
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Qué son las Tijeras Lister -->
+        <section id="que-son" class="card">
+            <h2>¿Qué son las Tijeras Lister?</h2>
+            <p>Las tijeras Lister son herramientas de corte especializadas desarrolladas originalmente para la esquila de ovejas, pero que han demostrado su eficacia en múltiples aplicaciones agrícolas y ganaderas. Con más de 80 años en el mercado, se han convertido en un estándar de calidad en el sector.</p>
+            
+            <p>Estas tijeras destacan por su diseño ergonómico, hojas de acero templado de alta resistencia y un mecanismo de resorte que reduce la fatiga durante el uso prolongado. Son la elección preferida de profesionales que requieren precisión y durabilidad en sus herramientas.</p>
+            
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlQDONQMLK-QW5Z1lesVglljYMxEuW1_DJg&s" alt="Tijeras Lister modelo clásico">
+                    <div class="gallery-caption">Modelo clásico de acero templado</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/jpeg;base64,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" alt="Tijeras Lister en uso para esquila">
+                    <div class="gallery-caption">Uso profesional en esquila de ovejas</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/jpeg;base64,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" alt="Detalle del mecanismo de las tijeras">
+                    <div class="gallery-caption">Mecanismo de precisión</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_x4KAkL7M4iWC_7w2wvgFpZbdf5Xi7efzQ&s" alt="Set completo con accesorios">
+                    <div class="gallery-caption">Set completo con accesorios</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Partes de las Tijeras -->
+        <section id="partes" class="card">
+            <h2>Partes y Componentes</h2>
+            <p>Las tijeras Lister están diseñadas con componentes de alta calidad que garantizan su durabilidad y eficiencia:</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>Hojas de Corte</h3>
+                    <p>Fabricadas en acero al carbono templado, con tratamiento térmico para mantener el filo. Longitud entre 15-20 cm según modelo.</p>
+                </div>
+                <div class="feature">
+                    <h3>Mecanismo de Resorte</h3>
+                    <p>Sistema de resorte helicoidal de acero que permite la apertura automática después de cada corte, reduciendo la fatiga.</p>
+                </div>
+                <div class="feature">
+                    <h3>Empuñaduras</h3>
+                    <p>Diseño ergonómico con recubrimiento antideslizante. Disponibles en diferentes tamaños para adaptarse a la mano del usuario.</p>
+                </div>
+                <div class="feature">
+                    <h3>Tornillo de Ajuste</h3>
+                    <p>Permite regular la tensión entre las hojas para un corte óptimo según el material a trabajar.</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 2rem;">Materiales y Tecnología</h3>
+            <p>Las tijeras Lister utilizan acero de alta calidad (0.6-0.8% de carbono) que se somete a un proceso de:</p>
+            <ul>
+                <li>Templado para aumentar la dureza</li>
+                <li>Revenido para mejorar la resistencia al impacto</li>
+                <li>Pulido fino para reducir la fricción</li>
+                <li>Tratamiento anticorrosivo para mayor durabilidad</li>
+            </ul>
+        </section>
+        
+        <!-- Tipos de Uso -->
+        <section id="usos" class="card">
+            <h2>Tipos de Uso</h2>
+            
+            <h3>Usos principales</h3>
+            <ul>
+                <li><strong>Esquila de ovejas:</strong> Su uso original y más común, permiten un corte limpio y rápido de la lana.</li>
+                <li><strong>Podado de plantas:</strong> Ideales para ramas de hasta 2 cm de diámetro en árboles frutales y ornamentales.</li>
+                <li><strong>Corte de forraje:</strong> Para preparar alimento animal como heno o paja.</li>
+            </ul>
+            
+            <h3>Usos alternativos</h3>
+            <ul>
+                <li>Recorte de setos y arbustos</li>
+                <li>Corte de mallas agrícolas</li>
+                <li>Preparación de materiales para empaque</li>
+                <li>Artesanías con materiales fibrosos</li>
+            </ul>
+            
+            <h3>Precauciones de uso</h3>
+            <ul>
+                <li>No utilizar para cortar materiales metálicos o demasiado duros</li>
+                <li>Mantener alejadas del alcance de niños</li>
+                <li>Usar guantes de protección cuando sea necesario</li>
+                <li>No exponer a temperaturas extremas por periodos prolongados</li>
+            </ul>
+        </section>
+        
+        <!-- Manejo y Mantenimiento -->
+        <section id="mantenimiento" class="card">
+            <h2>Manejo y Mantenimiento</h2>
+            
+            <h3>Instrucciones de uso</h3>
+            <ol>
+                <li>Sostenga las tijeras firmemente pero sin tensión excesiva</li>
+                <li>Coloque los dedos correctamente en las empuñaduras</li>
+                <li>Realice cortes decididos para mayor eficiencia</li>
+                <li>Deje que el resorte realice la apertura automática</li>
+                <li>Para cortes difíciles, ajuste la tensión del tornillo</li>
+            </ol>
+            
+            <h3>Mantenimiento recomendado</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>Limpieza</h4>
+                    <p>Después de cada uso, limpie las hojas con un paño seco. Para resina o savia, use alcohol o solventes suaves.</p>
+                </div>
+                <div class="feature">
+                    <h4>Lubricación</h4>
+                    <p>Aplique aceite ligero en el mecanismo y tornillo cada 15-20 horas de uso o semanalmente en uso intensivo.</p>
+                </div>
+                <div class="feature">
+                    <h4>Afilado</h4>
+                    <p>Afilar las hojas cada 50-60 horas de uso con piedra de grano fino, manteniendo el ángulo original.</p>
+                </div>
+                <div class="feature">
+                    <h4>Almacenamiento</h4>
+                    <p>Guarde en lugar seco, preferiblemente colgadas o en funda protectora. Evite humedad excesiva.</p>
+                </div>
+            </div>
+            
+            <h3>Vida útil y garantía</h3>
+            <p>Con un mantenimiento adecuado, las tijeras Lister pueden durar más de 5 años de uso profesional. La mayoría de modelos incluyen garantía de 2 años contra defectos de fabricación.</p>
+        </section>
+        
+        <!-- Precio y Disponibilidad -->
+        <section id="precio" class="card">
+            <h2>Precio y Disponibilidad</h2>
+            
+            <h3>Rangos de precios</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Características</th>
+                        <th>Precio estimado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lister Clásica</td>
+                        <td>Hojas 16cm, acero al carbono</td>
+                        <td>$45 - $65 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Lister Premium</td>
+                        <td>Hojas 18cm, acero inoxidable</td>
+                        <td>$75 - $95 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Lister Profesional</td>
+                        <td>Hojas 20cm, sistema anti-fatiga</td>
+                        <td>$100 - $130 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Kit Completo</td>
+                        <td>Tijeras + afilador + funda + repuestos</td>
+                        <td>$150 - $180 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Dónde comprar</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>Tiendas físicas</h4>
+                    <ul>
+                        <li>Ferreterías agrícolas especializadas</li>
+                        <li>Distribuidores de productos veterinarios</li>
+                        <li>Tiendas de herramientas profesionales</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h4>Comercio electrónico</h4>
+                    <ul>
+                        <li>Amazon (nuevo y usado)</li>
+                        <li>MercadoLibre</li>
+                        <li>eBay</li>
+                        <li>Sitios web de fabricantes</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h4>Distribuidores oficiales</h4>
+                    <p>Consulte nuestro listado de distribuidores autorizados por región en el sitio web del fabricante.</p>
+                    <a href="#contacto" class="btn">Contactar distribuidor</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonios -->
+        <section class="card">
+            <h2>Opiniones de Expertos</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"He usado tijeras Lister durante mis 20 años como esquilador profesional. Ninguna otra marca ofrece la misma combinación de durabilidad y comodidad."</p>
+                    <div class="testimonial-author">- Juan Pérez, Esquilador profesional</div>
+                </div>
+                <div class="testimonial">
+                    <p>"En nuestra granja usamos exclusivamente Lister para el podado de frutales. El mantenimiento es mínimo y el filo se mantiene por mucho tiempo."</p>
+                    <div class="testimonial-author">- María González, Gerente agrícola</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Como distribuidor, las Lister son nuestras tijeras más vendidas. Los clientes siempre regresan satisfechos con su rendimiento."</p>
+                    <div class="testimonial-author">- Carlos Ruiz, Distribuidor de herramientas</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Preguntas Frecuentes -->
+        <section class="card">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo sé cuándo afilar mis tijeras Lister? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Debe afilarlas cuando note que requiere más fuerza para realizar los cortes o cuando el material comienza a "desgarrarse" en lugar de cortarse limpiamente. Un mantenimiento preventivo cada 50 horas de uso es recomendable.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Existen modelos para zurdos? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Sí, la serie Professional de Lister ofrece modelos especialmente diseñados para usuarios zurdos, con el mecanismo de resorte invertido y empuñadura ergonómica adaptada.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo reemplazar partes dañadas? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Absolutamente. Las tijeras Lister están diseñadas para ser reparables. Puede adquirir hojas de repuesto, resortes y tornillos de ajuste por separado. Esto extiende significativamente la vida útil del producto.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Qué diferencia las Lister de otras tijeras? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Las principales diferencias son: 1) Calidad del acero (más duro y duradero), 2) Diseño ergonómico probado por profesionales, 3) Mecanismo de resorte de alta resistencia, y 4) Posibilidad de ajuste fino de la tensión.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>Email: info@tijeraslister.com</li>
+                        <li>Teléfono: +1 800 123 4567</li>
+                        <li>Dirección: Av. Agricultura 123, Ciudad</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces útiles</h3>
+                    <ul>
+                        <li><a href="#que-son">Sobre las Tijeras Lister</a></li>
+                        <li><a href="#partes">Partes y componentes</a></li>
+                        <li><a href="#usos">Guía de usos</a></li>
+                        <li><a href="#mantenimiento">Mantenimiento</a></li>
+                        <li><a href="#precio">Dónde comprar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Manual de usuario (PDF)</a></li>
+                        <li><a href="#">Guía de afilado</a></li>
+                        <li><a href="#">Video tutoriales</a></li>
+                        <li><a href="#">Distribuidores autorizados</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">i</a>
+                <a href="#" aria-label="YouTube">y</a>
+                <a href="#" aria-label="Twitter">t</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Tijeras Lister. Todos los derechos reservados. | Diseño adaptado para amantes de las herramientas profesionales</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Close all answers first
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                
+                // Toggle current answer if it wasn't active
+                if (!isActive) {
+                    answer.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
